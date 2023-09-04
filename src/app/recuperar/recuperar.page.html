@@ -1,0 +1,43 @@
+<ion-header [translucent]="true">
+    <ion-toolbar color="Black"> 
+      <ion-title>REGISTRAPP</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-textarea
+  fill="solid"
+  label="Email o número de teléfono"
+  labelPlacement="floating"
+  class="custom"
+  helperText=""
+  errorText="Correo no válido"
+  ngModel
+  email
+  ></ion-textarea>
+
+
+  <ion-textarea
+  fill="solid"
+  label="Contraseña nueva"
+  labelPlacement="floating"
+  class="custom"
+  helperText=""
+  errorText="Caracteres incorrectos"
+  ngModel
+  email
+  ></ion-textarea>
+
+  <ion-textarea
+  fill="solid"
+  label="Repetir contraseña "
+  labelPlacement="floating"
+  class="custom"
+  helperText=""
+  errorText="Caracteres incorrectos"
+  ngModel
+  email
+  ></ion-textarea>
+
+  <ion-button class="btn1" expand="block" color="white">Reestablecer</ion-button>
+</ion-content>

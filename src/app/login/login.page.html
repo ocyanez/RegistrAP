@@ -1,0 +1,35 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="Black">
+    <ion-title>REGISTRAPP</ion-title>
+    <ion-button class="btn4" size="small" fill="clear" [routerLink]="['/login-prof']">Profesores</ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-textarea
+  fill="solid"
+  label="Usuario"
+  labelPlacement="floating"
+  class="custom"
+  helperText=""
+  errorText=""
+  ngModel
+
+  ></ion-textarea>
+
+
+  <ion-textarea
+  fill="solid"
+  label="Contraseña"
+  labelPlacement="floating"
+  class="custom"
+  helperText=""
+  errorText=""
+  ngModel
+  
+  ></ion-textarea>
+
+  <ion-button class="btn1" expand="block" color="white" [routerLink]="['/inicio-alum']">Iniciar Sesión</ion-button>
+  <ion-button class="btn2" size="small" fill="clear" [routerLink]="['/recuperar']">Reestablecer contraseña</ion-button>
+</ion-content>
